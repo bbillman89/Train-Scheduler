@@ -1,0 +1,43 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background-color: #390000;
+    color: white;
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+table {
+    margin: 20px;
+}
+
+tr {
+    margin: 15px;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid lightgray;
+}
+
+.sec-head {
+    background-color: #a06600;
+}
+
+.sec-head h1 {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
