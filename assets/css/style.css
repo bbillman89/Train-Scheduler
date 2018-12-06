@@ -1,10 +1,18 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid lightgray;
 }
 
 header {
     padding: 30px;
     text-align: center;
+    text-transform: uppercase;
     background-color: #390000;
     color: white;
 }
@@ -17,20 +25,29 @@ header p {
     font-size: 16px;
 }
 
-table {
-    margin: 20px;
+table, form {
+    margin: 40px;
 }
 
 tr {
     margin: 15px;
 }
 
-.container {
-    width: 1200px;
-    margin: auto;
-    margin-top: 40px;
-    border: 1px solid lightgray;
+input {
+    width: 100%;    
+    height: 30px;
+    margin-top: 20px;
 }
+
+.button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #a06600;
+}
+
 
 .sec-head {
     background-color: #a06600;
