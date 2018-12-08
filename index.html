@@ -36,13 +36,6 @@
                 <th>Next Arrival</th>
                 <th>Minutes Away</th>
             </tr>
-            <tr>
-                <td>Train Name</td>
-                <td>Destination</td>
-                <td>Frequency (min)</td>
-                <td>Next Arrival</td>
-                <td>Minutes Away</td>
-            </tr>
         </table>
 
     </section>
@@ -54,10 +47,18 @@
             </h1>
         </div>
         <form id="train-form">
-            <input id="name" type="text" placeholder="Train Name">
-            <input id="destination" type="text" placeholder="Destination">
-            <input id="fir-train" type="text" placeholder="First Train Time (HH:mm - military time)">
-            <input id="freq" type="text" placeholder="Frequency (min)">
+            <label>Train Name</label>
+            <input id="name" type="text" placeholder="Train Name" required>
+            
+            <label>Train Destination</label>
+            <input id="destination" type="text" placeholder="Destination" required>
+            
+            <label>First Train Time</label>
+            <input id="fir-train" type="time" placeholder="First Train Time (HH:mm - military time)" value="" required>
+       
+            <label>Frequency (min)</label>
+            <input id="freq" type="number" placeholder="Frequency (min)" required>
+       
             <input class="button" id="new-train" type="submit" value="Submit">
         </form>
     </section>
