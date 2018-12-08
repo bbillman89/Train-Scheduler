@@ -4,29 +4,28 @@ Brett Billman
 December 6th 2018
 */
 
-// Initialize Firebase
-let config = {
-apiKey: "AIzaSyCSj4VozDNVAh0ZVay2XS70vzFGwh3rVbc",
-authDomain: "train-app-data.firebaseapp.com",
-databaseURL: "https://train-app-data.firebaseio.com",
-projectId: "train-app-data",
-storageBucket: "train-app-data.appspot.com",
-messagingSenderId: "999241241117"
-};
-
-firebase.initializeApp(config);
-
-let database = firebase.database();
-
-console.log(database);
-
 let train = "";
 let destination = "";
 let firTrain = "";
 let freq = "";
 
+$(document).ready(function(){
 
-$(".button").on("click", function(event){
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCSj4VozDNVAh0ZVay2XS70vzFGwh3rVbc",
+    authDomain: "train-app-data.firebaseapp.com",
+    databaseURL: "https://train-app-data.firebaseio.com",
+    projectId: "train-app-data",
+    storageBucket: "train-app-data.appspot.com",
+    messagingSenderId: "999241241117"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+
+  $(".button").on("click", function(){
     event.preventDefault();
 
     train = $("#name").val().trim();
@@ -45,5 +44,9 @@ $(".button").on("click", function(event){
         firTrain: firTrain,
         freq = freq
     });
+
+
+  });
+
 
 });

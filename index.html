@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </head>
 <body>
 
@@ -52,10 +54,10 @@
             </h1>
         </div>
         <form id="train-form">
-            <input type="text" placeholder="Train Name">
-            <input type="text" placeholder="Destination">
-            <input type="text" placeholder="First Train Time (HH:mm - military time)">
-            <input type="text" placeholder="Frequency (min)">
+            <input id="name" type="text" placeholder="Train Name">
+            <input id="destination" type="text" placeholder="Destination">
+            <input id="fir-train" type="text" placeholder="First Train Time (HH:mm - military time)">
+            <input id="freq" type="text" placeholder="Frequency (min)">
             <input class="button" type="submit" value="Submit">
         </form>
     </section>
