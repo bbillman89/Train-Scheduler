@@ -40,6 +40,11 @@ $(document).ready(function(){
             freq: freq
         });
 
+        $("#name").val("");
+        $("#destination").val("");
+        $("#fir-train").val("");
+        $("#freq").val("");
+
     });
 
     database.ref().limitToLast(5).on("child_added", function(snapshot) {
@@ -78,7 +83,7 @@ $(document).ready(function(){
             "<tr>" +
                 "<td>" + sv.train + "</td>" +
                 "<td>" + sv.destination + "</td>" +
-                "<td>" + sv.firTrain + "</td>" +
+                "<td>" + sv.freq + "</td>" +
                 "<td>" + nextDisplay + "</td>" +
                 "<td>" + tMinutesTillTrain + "</td>" +
             "</tr>"
