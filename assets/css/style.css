@@ -2,6 +2,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+body {
+    margin-bottom: 75px;
+}
+
 .container {
     width: 1200px;
     margin: auto;
@@ -13,7 +17,7 @@ header {
     padding: 30px;
     text-align: center;
     text-transform: uppercase;
-    background-color: #390000;
+    background-color: #003248;
     color: white;
 }
 
@@ -26,7 +30,7 @@ header p {
 }
 
 table, form {
-    width: 100%;
+    width: 1120px;
     margin: 40px;
 }
 
@@ -50,7 +54,7 @@ label {
 }
 
 input {
-    width: 100%;    
+    width: 1114px;    
     height: 30px;
     margin-bottom: 20px;
     /* box-sizing: border-box; */
@@ -62,12 +66,12 @@ input {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    background-color: #a06600;
+    background-color: #003248;
     margin-bottom: 0;
 }
 
 .sec-head {
-    background-color: #a06600;
+    background-color: #003248;
 }
 
 .sec-head h1 {

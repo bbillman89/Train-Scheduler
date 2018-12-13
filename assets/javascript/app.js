@@ -58,27 +58,27 @@ $(document).ready(function(){
         
 
         var firstTimeConverted = moment(sv.firTrain, "HH:mm").subtract(1, "days");
-        console.log(firstTimeConverted);
+        //console.log(firstTimeConverted);
 
         var currentTime = moment();
-        console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
+        //console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
 
         var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
-        console.log("DIFFERENCE IN TIME: " + diffTime);
+        //console.log("DIFFERENCE IN TIME: " + diffTime);
 
         var tRemainder = diffTime % sv.freq;
-        console.log(tRemainder);
+        //console.log(tRemainder);
 
         var tMinutesTillTrain = sv.freq - tRemainder;
-        console.log("MINUTES TILL TRAIN: " + tMinutesTillTrain);
+        //console.log("MINUTES TILL TRAIN: " + tMinutesTillTrain);
 
         var nextTrain = moment().add(tMinutesTillTrain, "minutes");
-        console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
+        //console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
         
-        var nextDisplay = moment(nextTrain).format("HH:mm");
+        var nextDisplay = moment(nextTrain).format("hh:mma");
 
-
-
+        $("#what-time").text("CURRENT TIME: " + moment(currentTime).format("hh:mma"));
+        
         $("#sch-table").append(
             "<tr>" +
                 "<td>" + sv.train + "</td>" +
@@ -88,11 +88,12 @@ $(document).ready(function(){
                 "<td>" + tMinutesTillTrain + "</td>" +
             "</tr>"
         );
-
+        
         // Handle the errors
     }, function(errorObject) {
-    console.log("Errors handled: " + errorObject.code);
+        console.log("Errors handled: " + errorObject.code);
     });
+    
 
 });
 
